@@ -1,6 +1,6 @@
 [project]
 name = "dobslit_senai_a3"
-version = "1.0.0"
+version = "0.0.0"
 authors = [
     { name="Filipe Chagas Ferraz", email="filipe.ferraz0@gmail.com" },
 ]
