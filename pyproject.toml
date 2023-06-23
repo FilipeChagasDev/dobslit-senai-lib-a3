@@ -1,0 +1,13 @@
+[project]
+name = "dobslit_senai_a3"
+version = "1.0.0"
+authors = [
+    { name="Filipe Chagas Ferraz", email="filipe.ferraz0@gmail.com" },
+]
+description = "Biblioteca criada para a aula de Julho de 2023 do curso de computação quântica Dobslit-SENAI"
+readme = "README.md"
+requires-python = ">=3.0"
+dependencies = [
+  "qiskit >= 0.22",
+  "pandas >= 1.5"
+]
