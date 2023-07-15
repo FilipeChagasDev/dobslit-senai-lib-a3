@@ -101,6 +101,14 @@ class GroverAlgorithm():
         self.circ.mcx(operand_qubits, target_qubit[0])
         self.circ.x(operand_qubits)
         self.circ.x(target_qubit[0])
+
+    def logic_or_dg(self, operand_qubits, target_qubit):
+        #Adiciona um equivalente quântico inverso da porta OR ao circuito
+        operand_qubits = [qbit[0] for qbit in operand_qubits]
+        self.circ.x(target_qubit[0])
+        self.circ.x(operand_qubits)
+        self.circ.mcx(operand_qubits, target_qubit[0])
+        self.circ.x(operand_qubits)
     
     def build_search_space(self):
         #Método abstrato onde o circuito que constroi o espaço de busca deve ser construido
